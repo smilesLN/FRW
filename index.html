@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>福立旺</title>
+    <link rel="apple-touch-icon-precomposed" href="img\freewon.png" />
+    <meta name="msapplication-TileImage" content="img\freewon.png" />
+    <link rel="shortcut icon" href="img\freewon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="full-screen" content="yes">
+    <!--UC强制全屏-->
+    <meta name="browsermode" content="application">
+    <!--UC应用模式-->
+    <meta name="x5-fullscreen" content="true">
+    <!--QQ强制全屏-->
+    <meta name="x5-page-mode" content="app">
+    <!--QQ应用模式-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sou.js"></script>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+    <!--视频头部背景-->
+<!--   <div class="banner-video">
+        <!--视频来自阿里云首页，有需要请自行更换-->
+        <!--video autoplay loop muted poster="https://cn.bing.com//th?id=OHR.HuntsMesa_JA-JP3140979616_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp">
+            <source src="banner3.mp4" type="video/mp4">
+        </video-->
+        <!--注释掉视频可换成图片版本-->
+<!--        <img src="img/background.jpg" alt="">
+        <div class="bottom-cover" style="background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(244 248 251 / 0.6) 50%, rgb(244 248 251) 100%);"></div>
+    </div> --> -->
+    <!--topbar开始-->
+    <style>
+		body{
+			background: url(./img/background.jpg) 0 0 repeat scroll transparent;background-size: cover;
+		}
+        .navbar-toggler svg {
+            width: 48px;
+            height: 48px;
+        }
+        
+        .navbar-toggler .bi-list-nested {
+            display: none;
+        }
+        
+        .navbar-toggler.collapsed .bi-list-nested {
+            display: block;
+        }
+        
+        .navbar-toggler.collapsed .bi-x {
+            display: none;
+        }
+        
+        .navbar-toggler .bi-x {
+            display: block;
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="position: absolute; z-index: 10000;">
+        <a class="navbar-brand" href="http://192.168.1.4:5000/#/signin"><img src="img/freewon.png" height="50" style=" margin-left: 5px;" alt=""></a>
+        <button class="navbar-toggler collapsed" style="border: none; outline: none;" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/svg/menu.svg" style="width: 24px; height: 24px;" alt="菜单图标" class="bi bi-list-nested">
+                <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 015 11h10a.5.5 0 010 1H5a.5.5 0 01-.5-.5zm-2-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm-2-4A.5.5 0 011 3h10a.5.5 0 010 1H1a.5.5 0 01-.5-.5z"></path>
+            </svg><span>
+            <img src="img/svg/shut.svg" style="width: 24px; height: 24px;" alt="关闭图标" class="bi bi-x">
+                    <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"></path>
+                    <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"></path>
+                </svg><span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://www.freewon.com.cn/" target="_blank">福立旺</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file/yuangongshouce.html" target="_blank">员工手册</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.freewon.com.cn/about/2672.html" target="_blank">关于我们</a>
+                </li>
+				<li class="nav-item">
+				    <a class="nav-link" href="企业通讯录新版2020年.htm" target="_blank">企业通讯录</a>
+				</li>
+            </ul>
+            <style>
+                #he-plugin-simple {
+                    z-index: 1000;
+                }
+            </style>
+            <div id="he-plugin-simple"></div>
+            <script>
+                WIDGET = {
+                    CONFIG: {
+                        "modules": "01234",
+                        "background": 5,
+                        "tmpColor": "FFFFFF",
+                        "tmpSize": 14,
+                        "cityColor": "FFFFFF",
+                        "citySize": 14,
+                        "aqiSize": 14,
+                        "weatherIconSize": 22,
+                        "alertIconSize": 16,
+                        "padding": "8px 8px 8px 8px",
+                        "shadow": "1",
+                        "language": "auto",
+                        "borderRadius": 5,
+                        "fixed": "false",
+                        "vertical": "middle",
+                        "horizontal": "center",
+                        "key": "acd0fdcab4b9481a98d0f59145420fac"
+                    }
+                }
+            </script>
+            <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
+        </div>
+    </nav>
+    <!--topbar结束-->
+    <div class="container" style="margin-top: 100px; position: relative; z-index: 100;">
+        <!--搜索开始-->
+        <div id="search" class="s-search">
+            <div id="search-list" class="hide-type-list">
+                <div class="search-group group-a s-current" style="padding-left: 20px">
+                    <ul class="search-type">
+                        <li><input checked="" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下,你就知道"><label for="type-baidu"><span style="color:#2100E0">百度</span></label></li>
+                        <li><input hidden="" type="radio" name="type" id="type-bing" value="https://www.bing.com/search?q=" data-placeholder="微软Bing搜索"><label for="type-bing"><span style="color:#0078D4">Bing</span></label></li>
+                    </ul>
+                </div>
+            </div>
+            <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" id="super-search-fm">
+                <input type="text" id="search-text" placeholder="百度一下" style="outline:0" autocomplete="off">
+				
+    <button class="submit" type="submit">
+    <img src="img/svg/sousuo.svg" style="width: 36px; height: 36px; margin-top: -5px;" alt="搜索图标">
+    <span></span>
+</button>
+
+            <ul id="word" style="display: none;"></ul>
+            </form>
+            <div class="set-check hidden-xs">
+            <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
+            </div>
+        </div>
+        <!--搜索结束-->
+		
+        <ul class="mylist row">
+        <li class="title">
+            <span style="position: relative; top: -2px;">
+            <img src="img/freewon.png" style="width: 16px; height: 16px; margin-right: 5px;" alt="福立旺">
+            </span>福立旺内网</li>
+				
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://exmail.qq.com/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/mail.svg" style="width: 48px; height: 48px;" alt="Freewon企业邮箱">
+                    <span style="margin-top: 5px;">Freewon企业邮箱</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://192.168.0.4:8080/seeyon/main.do?method=index" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/OA.svg" style="width: 48px; height: 48px;" alt="致远A8+">
+                    <span style="margin-top: 5px;">致远A8+</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://192.168.0.129/U9C/mvc/login/index" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/U9.JPG" style="width: 48px; height: 48px;" alt="U9">
+                    <span style="margin-top: 5px;">U9</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://192.168.0.130/#/user/login" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/MES.png" style="width: 48px; height: 48px;" alt="MES">
+                    <span style="margin-top: 5px;">MES</span></a></li>
+			<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://192.168.0.125:8081" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/pdm.jpg" style="width: 48px; height: 48px;" alt="PDM">
+                    <span style="margin-top: 5px;">PDM</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://valueapex.com/eamic/index.php" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/EAMic.svg" style="width: 48px; height: 48px;" alt="领值系统">
+                    <span style="margin-top: 5px;">领值系统</span></a></li>
+			<!-- <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="D:\360MoveData\Users\NB230710\Desktop\企业通讯录\企业通讯录新版2020年.htm" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+			        <img src="img/通讯录.jpg" style="width: 48px; height: 48px;" alt="企业通讯录">
+			        <span style="margin-top: 5px;">企业通讯录</span></a></li>   -->         
+            </ul>
+        
+		<ul class="mylist row">
+        <li class="title">
+            <span style="position: relative; top: -2px;">
+            <img src="img/freewon.png" style="width: 16px; height: 16px; margin-right: 5px;" alt="外部网站">
+            </span>外部网站</li>
+				
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.apple.com.cn/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/apple.webp" style="width: 48px; height: 48px;" alt="apple官网">
+                    <span style="margin-top: 5px;">Apple</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=6e74d8fe16e15fb7da50e5b15334b3080bdc0e17b39044ba7d0f18487da90f5a&rv=3&path=/SRExternalApp/pages/#/dashboard/landing-page" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/apple.webp" style="width: 48px; height: 48px;" alt="Apple供应商关系">
+                    <span style="margin-top: 5px;">Apple-Suppliercare</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://incline.apple.com" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/apple.webp" style="width: 48px; height: 48px;" alt="AppleIncline">
+                    <span style="margin-top: 5px;">Apple-Incline</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://sift.apple.com" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/apple.webp" style="width: 48px; height: 48px;" alt="AppleSift">
+                    <span style="margin-top: 5px;">Apple-Sift</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://partner.apple.com" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/apple.webp" style="width: 48px; height: 48px;" alt="AppleSift">
+                    <span style="margin-top: 5px;">Apple-Partner</span></a></li>
+			<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://soa.joyoung.com" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/joyoung.jpg" style="width: 48px; height: 48px;" alt="rrd-scm>
+                    <span style="margin-top: 5px;">九阳OA</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://webcloud.byd.com.cn/supplier" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/BYD.png" style="width: 48px; height: 48px;" alt="BYD">
+                    <span style="margin-top: 5px;">BYD应用云</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://scm-sp.rrd.com.cn/#/index" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/RRD.png" style="width: 48px; height: 48px;" alt="当纳利">
+                    <span style="margin-top: 5px;">当纳利</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://fisp.foxlink.com.tw:8181/fisp/faces/default" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/正崴精密.png" style="width: 48px; height: 48px;" alt="正崴精密">
+                    <span style="margin-top: 5px;">正崴精密</span></a></li>
+			<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://webasto.empowerqlm.com/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+			        <img src="img/webasite.png" style="width: 48px; height: 48px;" alt="伟巴斯特">
+			        <span style="margin-top: 5px;">伟巴斯特</span></a></li>
+			<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://esupplier.te.com/supplier/ppap/web/view?ppapId=120921" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+			        <img src="img/taike.jpg" style="width: 48px; height: 48px;" alt="泰科">
+			        <span style="margin-top: 5px;">泰科</span></a></li>
+				<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ppap.inalfa.com/supplierportal.html" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+					<img src="img/yingnafa.jpg" style="width: 48px; height: 48px;" alt="英纳法">
+					<span style="margin-top: 5px;">英纳法</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://console.xiekeyun.com/workbench" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/携客云.jpeg" style="width: 48px; height: 48px;" alt="携客云">
+                    <span style="margin-top: 5px;">携客云</span></a></li>        
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://ivendor-extra.one-fit.tw/Home/Index?ReturnUrl=/VendorApply/MyApplies" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/fit.jpg" style="width: 48px; height: 48px;" alt="FIT">
+                    <span style="margin-top: 5px;">FIT</span></a></li>
+			<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.account.box.com/login" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/box.png" style="width: 48px; height: 48px;" alt="BOX">
+                    <span style="margin-top: 5px;">BOX</span></a></li>
+                    
+            
+        </ul>    
+		
+        <ul class="mylist row">
+<!--        <li class="title">
+            <span style="position: relative; top: -2px;">
+            <img src="img/freewon.png" style="width: 16px; height: 16px; margin-right: 5px;" alt="人资部">
+            </span>人资部</li>
+			
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://ybj.jszwfw.gov.cn/hsa-local/web/hallEnter/#/Index" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/yb.svg" style="width: 48px; height: 48px;" alt="医保公共服务">
+                    <span style="margin-top: 5px;">医保公共服务</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://rs.jshrss.jiangsu.gov.cn/index/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/rs.svg" style="width: 48px; height: 48px;" alt="江苏人社网办大厅">
+                    <span style="margin-top: 5px;">江苏人社网办大厅</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://miapp.ntgjj.com/ish" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/gjj.svg" style="width: 48px; height: 48px;" alt="公积金管理中心">
+                    <span style="margin-top: 5px;">公积金管理中心</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://xft.cmbchina.com/#/index" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/zsyh.svg" style="width: 48px; height: 48px;" alt="招商银行薪福通">
+                    <span style="margin-top: 5px;">招商银行薪福通</span></a></li>
+					<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://218.94.59.118:9611/bes/#/login" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/tzsb.svg" style="width: 48px; height: 48px;" alt="特种设备服务云平台">
+                    <span style="margin-top: 5px;">特种设备服务云平台</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://ccpt.tzjzib.com:9525/login" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/cc.svg" style="width: 48px; height: 48px;" alt="叉车车队管理系统">
+                    <span style="margin-top: 5px;">叉车车队管理系统</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://pss.txffp.com/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/pg.svg" style="width: 48px; height: 48px;" alt="票根网">
+                    <span style="margin-top: 5px;">票根网</span></a></li>
+        </ul>
+		
+        <ul class="mylist row">
+        <li class="title">
+            <span style="position: relative; top: -2px;">
+            <img src="img/freewon.png" style="width: 16px; height: 16px; margin-right: 5px;" alt="采购部">
+            </span>采购部</li>
+			
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.jd.com/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/jd.svg" style="width: 48px; height: 48px;" alt="京东">
+                    <span style="margin-top: 5px;">京东</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.taobao.com/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/tb.svg" style="width: 48px; height: 48px;" alt="淘宝">
+                    <span style="margin-top: 5px;">淘宝</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.1688.com/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/1688.svg" style="width: 48px; height: 48px;" alt="阿里1688">
+                    <span style="margin-top: 5px;">阿里1688</span></a></li>
+			<li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.sigmaaldrich.cn/CN/zh" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/merck.svg" style="width: 48px; height: 48px;" alt="默克生命科学">
+                    <span style="margin-top: 5px;">默克生命科学</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.reagent.com.cn/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/gysj.svg" style="width: 48px; height: 48px;" alt="国药试剂">
+                    <span style="margin-top: 5px;">国药试剂</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="http://www.gayzd.com/login#/login" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/jh.svg" style="width: 48px; height: 48px;" alt="易制毒化学品管理平台">
+                    <span style="margin-top: 5px;">易制毒化学品管理平台</span></a></li>
+        </ul>
+		
+        <ul class="mylist row">
+        <li class="title">
+            <span style="position: relative; top: -2px;">
+            <img src="img/freewon.png" style="width: 16px; height: 16px; margin-right: 5px;" alt="技术部">
+            </span>技术部</li>
+			
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://cponline.cnipa.gov.cn/index" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/zlj.svg" style="width: 48px; height: 48px;" alt="专利业务办理系统">
+                    <span style="margin-top: 5px;">专利业务办理系统</span></a></li>
+            <li class="col-3 col-sm-3 col-md-3 col-lg-1"><a rel="nofollow" href="https://www.cnki.net/" target="_blank" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="img/ico/zgzw.svg" style="width: 48px; height: 48px;" alt="中国知网">
+                    <span style="margin-top: 5px;">中国知网</span></a></li>
+        </ul>
+	 -->	
+    </div>
+    <!--版权信息开始-->
+    <p class="mt-5 mb-3 text-muted text-center">©2024 by <a href="mailto:909647850@qq.com">Wangzhaoguo</a>. All rights reserved.</p>
+    <!--
+作者:D.Young
+主页：https://blog.5iux.cn/
+github：https://github.com/5iux/5iux.github.io
+日期：2021-08-02
+版权所有，请勿删除
+-->
+    <!--版权信息结束-->
+    <script>
+    eval(function(e, t, a, c, i, n) {
+        if (i = function(e) {
+                return (e < t ? "" : i(parseInt(e / t))) + (35 < (e %= t) ? String.fromCharCode(e + 29) : e.toString(36))
+            }, !"".replace(/^/, String)) {
+            for (; a--;) n[i(a)] = c[a] || i(a);
+            c = [function(e) {
+                return n[e]
+            }], i = function() {
+                return "\\w+"
+            }, a = 1
+        }
+        for (; a--;) c[a] && (e = e.replace(new RegExp("\\b" + i(a) + "\\b", "g"), c[a]));
+        return e
+    }('!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();', 62, 77, "||function|target|document|value|return|type|querySelector|checked||||||||||||||||||||||||||var|input|name|search|addEventListener|window|parentNode|action|localStorage|classList|newWindow|focus|superSearch|current|placeholder|length|for|change|querySelectorAll|setItem|new|open|add|getAttribute|Date|getItem|href|void|preventDefault|text|location|data|blank|removeAttribute|set|super|fm|_blank|group|remove|submit|setAttribute".split("|"), 0, {}));
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
